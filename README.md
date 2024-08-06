@@ -1,4 +1,4 @@
-## Дипломная работа AQA
+## Дипломная работа Карпенко
 
 ### Документация
 [План автоматизации](https://github.com/HeadLavie/qa-diploma/blob/main/docs/Plan.md)
