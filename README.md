@@ -1,11 +1,11 @@
 ## Дипломная работа AQA
 
 ### Документация
-[План автоматизации](https://github.com/z88m/netology-qa-diploma/blob/master/docs/Plan.md)
+[План автоматизации](https://github.com/HeadLavie/qa-diploma/blob/main/docs/Plan.md)
 
-[Отчёт по итогам тестирования](https://github.com/z88m/netology-qa-diploma/blob/master/docs/Report.md)
+[Отчёт по итогам тестирования](https://github.com/HeadLavie/qa-diploma/blob/main/docs/Report.md)
 
-[Отчет по итогам автоматизации](https://github.com/z88m/netology-qa-diploma/blob/master/docs/Summary.md)
+[Отчет по итогам автоматизации](https://github.com/HeadLavie/qa-diploma/blob/main/docs/Summary.md)
 
 #### Подготовка и запуск теста
 
