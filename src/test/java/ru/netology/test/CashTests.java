@@ -5,7 +5,7 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.CsvFileSource;
-import ru.netology.page.StartPage;
+import ru.netology.pages.StartPage;
 import ru.netology.testUtils.TestDataGenerator;
 import ru.netology.testUtils.TestSQLHelper;
 

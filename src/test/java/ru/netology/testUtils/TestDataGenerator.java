@@ -1,9 +1,9 @@
 package ru.netology.testUtils;
 
+import com.github.javafaker.Faker;
 
 import java.time.LocalDate;
 import java.util.Random;
-import com.github.javafaker.Faker;
 
 public class TestDataGenerator {
 

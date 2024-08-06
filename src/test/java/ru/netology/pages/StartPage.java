@@ -1,4 +1,4 @@
-package ru.netology.page;
+package ru.netology.pages;
 
 import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
@@ -92,11 +92,11 @@ public class StartPage {
     }
 
     public void checkNotificationDeclinedVisible() {
-        notificationDeclined.shouldBe(visible, Duration.ofMillis(15000));
+        notificationApproved.shouldBe(visible, Duration.ofMillis(15000));
     }
 
     public void checkNotificationApprovedNotVisible() {
-        notificationApproved.shouldBe(hidden, Duration.ofMillis(15000));
+        notificationDeclined.shouldBe(hidden, Duration.ofMillis(15000));
     }
 
     public void checkCardNumberFormatErrorHave() {
