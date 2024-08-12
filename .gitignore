@@ -3,7 +3,8 @@ Thumbs.db*
 HELP.md
 .gradle
 build/
-.github/workflows
+.github/workflows/
+
 
 ### STS ###
 .apt_generated
