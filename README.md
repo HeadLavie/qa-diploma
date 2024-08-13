@@ -16,13 +16,13 @@
 1. Запуск контейнеров Docker и эмулятора биллинга
     * ```docker-compose up -d --build```
 1. Запуск SUT с поддержкой MySQL
-   * ```java -Dspring.datasource.url=jdbc:mysql://185.119.57.47:3306/app -jar artifacts/aqa-shop.jar```
+   * ```java "-Dspring.datasource.url=jdbc:mysql://185.119.57.47:3306/app" -jar artifacts/aqa-shop.jar```
 1. **ИЛИ** Запуск SUT с поддержкой Postgres
-   * ```java -Dspring.datasource.url=jdbc:postgresql://185.119.57.47:5432/app -jar artifacts/aqa-shop.jar```
+   * ```java "-Dspring.datasource.url=jdbc:postgresql://185.119.57.47:5432/app" -jar artifacts/aqa-shop.jar```
 1. Запуск тестов с MySQL
-   * ```gradlew -Ddb.url=jdbc:mysql://185.119.57.47:3306/app clean test```
+   * ```./gradlew clean test "-Ddatasource.url=jdbc:mysql://185.119.57.47:3306/app"```
 1. **ИЛИ** Запуск тестов с Postgres
-   * ```gradlew -Ddb.url=jdbc:postgresql://185.119.57.47:5432/app clean test```
+   * ```./gradlew clean test "-Ddatasource.url=jdbc:postgresql://185.119.57.47:5432/app"```
 
 #### Окончание тестов и остановка контейнеров
 
