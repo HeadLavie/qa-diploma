@@ -21,17 +21,18 @@ public class StartPage {
     protected SelenideElement payButton = $(byText("Купить")).parent().parent();
     protected SelenideElement creditButton = $(byText("Купить в кредит")).parent().parent();
     protected SelenideElement continueButton = $(byText("Продолжить")).parent().parent();
-    protected SelenideElement cardNumberField = $(byText("Номер карты")).parent();
-    protected SelenideElement monthField = $(byText("Месяц")).parent();
-    protected SelenideElement yearField = $(byText("Год")).parent();
-    protected SelenideElement ownerField = $(byText("Владелец")).parent();
-    protected SelenideElement cvcField = $(byText("CVC/CVV")).parent();
+    protected SelenideElement cardNumberField = $(byText("Номер карты")).parent().parent();
+    protected SelenideElement monthField = $(byText("Месяц")).parent().parent();
+    protected SelenideElement yearField = $(byText("Год")).parent().parent();
+    protected SelenideElement ownerField = $(byText("Владелец")).parent().parent();
+    protected SelenideElement cvcField = $(byText("CVC/CVV")).parent().parent();
     protected SelenideElement notificationApproved = $(".notification_status_ok ");
     protected SelenideElement notificationDeclined = $(".notification_status_error");
 
     public StartPage() {
         open(host);
         header.shouldBe(visible);
+        payButton.click();
     }
 
     public void inputData(Cards card) {
