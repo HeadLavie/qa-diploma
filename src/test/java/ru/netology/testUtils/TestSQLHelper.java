@@ -1,6 +1,5 @@
 package ru.netology.testUtils;
 
-import lombok.Getter;
 import java.sql.*;
 
 public class TestSQLHelper {
@@ -9,8 +8,26 @@ public class TestSQLHelper {
     private static String dbUser = System.getProperty("db.user");
     private static String dbPass = System.getProperty("db.pass");
 
-    @Getter private static final String payTable = "payment_entity";
-    @Getter private static final String creditTable = "credit_request_entity";
+    public static String getPayTable() {
+        return payTable;
+    }
+
+    public static void setPayTable(String payTable) {
+        TestSQLHelper.payTable = payTable;
+    }
+
+    public static String getCreditTable() {
+        return creditTable;
+    }
+
+    public static void setCreditTable(String creditTable) {
+        TestSQLHelper.creditTable = creditTable;
+    }
+
+    private static String payTable = "payment_entity";
+
+    private static String creditTable = "credit_request_entity";
+
 
     public static void cleanTables() throws SQLException {
         String cleanCreditTables = "DELETE FROM credit_request_entity;";
@@ -36,4 +53,5 @@ public class TestSQLHelper {
         }
         return status;
     }
+
 }
